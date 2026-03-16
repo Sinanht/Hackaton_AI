@@ -34,4 +34,4 @@ Predict resignation risk using structured HR data (salary, satisfaction, engagem
 - **Explainability**: SHAP value interpretation for every prediction.
 
 ---
-*Built for the Hackathon AI Project 2024.*
+*Built for the Hackathon AI Project 2026.*
