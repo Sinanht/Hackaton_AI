@@ -1,0 +1,11 @@
+EmpID,Employee_Name,DOB,Zip,Sex,RaceDesc,MaritalDesc,Department,Salary,EngagementSurvey,EmpSatisfaction,Absences,SpecialProjectsCount,DaysLateLast30,Termd,TermReason,DateofTermination
+101,John Doe,1985-05-20,02110,M,White,Married,Production,65000,4.2,3,5,0,0,0,N/A,N/A
+102,Jane Smith,1990-11-12,02115,F,Asian,Single,Engineering,95000,4.8,5,2,4,0,0,N/A,N/A
+103,Alice Brown,1982-03-05,02120,F,Black,Divorced,Sales,72000,3.5,2,12,0,2,1,Resignation,2023-10-15
+104,Bob White,1988-07-22,02125,M,White,Married,Production,58000,3.8,4,4,0,0,0,N/A,N/A
+105,Charlie Green,1992-01-30,02130,M,Hispanic,Single,IT,88000,4.5,5,1,6,0,0,N/A,N/A
+106,Diana Prince,1986-09-14,02135,F,Asian,Married,Engineering,105000,4.9,4,3,5,0,0,N/A,N/A
+107,Edward Norton,1979-12-01,02140,M,White,Married,Sales,85000,2.1,1,20,0,5,1,Resignation,2024-01-20
+108,Fiona Gallagher,1995-04-18,02145,F,Black,Single,IT,92000,4.6,5,0,3,0,0,N/A,N/A
+109,George Costanza,1984-06-25,02150,M,White,Married,Production,62000,3.2,3,8,0,1,0,N/A,N/A
+110,Hannah Montana,1993-08-30,02155,F,Hispanic,Single,Sales,78000,4.0,4,6,0,0,0,N/A,N/A

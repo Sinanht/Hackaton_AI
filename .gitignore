@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+venv/
+ENV/
+.env
+*.ipynb_checkpoints
+outputs/model.pkl
+outputs/model_columns.pkl
+outputs/cleaned_data.csv
+outputs/fairness_report.csv
+outputs/plots/

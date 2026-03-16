@@ -1,0 +1,3 @@
+Salary,EngagementSurvey,EmpSatisfaction,Absences,SpecialProjectsCount,DaysLateLast30,sentiment_score,MaritalDesc_Married,MaritalDesc_Single,Department_IT,Department_Production,Department_Sales,sentiment_label_Neutral,sentiment_label_Positive,theme_Internal Mobility,theme_Management,theme_Other,theme_Salary,theme_Work-Life Balance,y_true,y_pred,y_prob
+88000,4.5,5,1,6,0,-0.4,False,True,True,False,False,False,False,False,True,False,False,False,0,0,0.24
+62000,3.2,3,8,0,1,0.325,True,False,False,True,False,False,True,False,True,False,False,False,0,0,0.17

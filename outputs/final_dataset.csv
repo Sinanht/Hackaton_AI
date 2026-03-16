@@ -1,0 +1,11 @@
+EmpID,MaritalDesc,Department,Salary,EngagementSurvey,EmpSatisfaction,Absences,SpecialProjectsCount,DaysLateLast30,Termd,Employee_ID,sentiment_score,sentiment_label,theme
+101,Married,Production,65000,4.2,3,5,0,0,0,101,0.0,Neutral,Salary
+102,Single,Engineering,95000,4.8,5,2,4,0,0,102,0.5,Positive,Other
+103,Divorced,Sales,72000,3.5,2,12,0,2,1,103,-0.1699999999999999,Negative,Work-Life Balance
+104,Married,Production,58000,3.8,4,4,0,0,0,104,0.0,Neutral,Internal Mobility
+105,Single,IT,88000,4.5,5,1,6,0,0,105,-0.4,Negative,Management
+106,Married,Engineering,105000,4.9,4,3,5,0,0,106,0.8,Positive,Career Growth
+107,Married,Sales,85000,2.1,1,20,0,5,1,107,-0.125,Negative,Salary
+108,Single,IT,92000,4.6,5,0,3,0,0,108,0.6000000000000001,Positive,Other
+109,Married,Production,62000,3.2,3,8,0,1,0,109,0.325,Positive,Management
+110,Single,Sales,78000,4.0,4,6,0,0,0,110,0.4,Positive,Other
