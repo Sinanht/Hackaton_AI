@@ -143,6 +143,44 @@ section[data-testid="stSidebar"] * {
 textarea, input, .stSelectbox, .stNumberInput, .stSlider {
     border-radius: 12px !important;
 }
+
+/* Fix white background containers */
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #0f172a);
+}
+
+/* Main content area */
+[data-testid="stVerticalBlock"] {
+    background: transparent;
+}
+
+/* Streamlit elements */
+[data-testid="stMetric"] {
+    background-color: transparent !important;
+}
+
+/* Fix chart background */
+canvas {
+    background-color: transparent !important;
+}
+
+/* Dataframe background */
+[data-testid="stDataFrame"] {
+    background-color: rgba(255,255,255,0.05);
+}
+
+/* Markdown containers */
+[data-testid="stMarkdownContainer"] {
+    background: transparent;
+}
+
+/* Sidebar inputs */
+section[data-testid="stSidebar"] input,
+section[data-testid="stSidebar"] textarea,
+section[data-testid="stSidebar"] .stSlider {
+    background-color: #1f2937 !important;
+    color: white !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
