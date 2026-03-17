@@ -5,7 +5,16 @@
 HR teams want to identify employees at risk of leaving to take proactive measures and improve retention.
 
 ## Objective
-Predict resignation risk using structured HR data (salary, satisfaction, engagement) and employee feedback text using NLP sentiment analysis.
+The primary objective is to empower HR departments to predict employee resignation risks early, combining both structured HR metrics (salary, satisfaction, engagement) and unstructured employee feedback seamlessly evaluated via NLP sentiment analysis, ultimately reducing turnover and maintaining a healthy work environment.
+
+## Persona
+- **Primary User**: HR Managers / Talent Retention Specialists.
+- **Secondary User**: Department Heads looking to monitor their team's well-being.
+- **Technical User**: Data Scientists & ML Engineers responsible for ensuring model fairness and accuracy.
+
+## Scope
+- **In Scope**: Predicting the likelihood of an employee leaving based on historical records and feedback. Providing explainable AI (XAI) outputs to HR. Ensuring fairness across sensitive attributes.
+- **Out of Scope**: Automated firing/hiring systems. Replacing human HR interactions. Full-scale enterprise integrations (this is an MVP approach).
 
 ## Key Features
 - **Privacy by Design**: Personal identifiers (Names, DOB, Zip) are removed during preprocessing.
@@ -20,7 +29,7 @@ Predict resignation risk using structured HR data (salary, satisfaction, engagem
 - `outputs/`: Cleaned data, trained model, and results/plots.
 - `docs/`: Responsible AI documentation (Data Card, Model Card).
 
-## Installation & Usage
+## Instructions (Installation & Usage)
 1. **Requirements**: `pip install -r requirements.txt`
 2. **Setup**: `python src/preprocess.py`
 3. **Analyze**: `python src/nlp_analysis.py`
