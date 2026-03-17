@@ -23,24 +23,31 @@ def get_sentiment_label(score):
         return "Negative"
     return "Neutral"
 
-def detect_theme(text):
-    text = str(text).lower()
-    if any(word in text for word in ["salary", "underpaid", "pay", "compensation"]):
-        return "Salary"
-    elif any(word in text for word in ["manager", "management", "leader", "micromanagement"]):
-        return "Management"
-    elif any(word in text for word in ["balance", "workload", "stress", "hours"]):
-        return "Work-Life Balance"
-    elif any(word in text for word in ["promotion", "growth", "career"]):
-        return "Career Growth"
-    elif any(word in text for word in ["transfer", "department", "role"]):
-        return "Internal Mobility"
-    return "Other"
+def extract_themes(text):
+    themes = []
+    text_lower = str(text).lower()
+    
+    if "salary" in text_lower or "underpaid" in text_lower or "pay" in text_lower:
+        themes.append("Salary issue")
+    
+    if "workload" in text_lower or "stress" in text_lower:
+        themes.append("Workload")
+        
+    if "manager" in text_lower or "leader" in text_lower or "micromanagement" in text_lower:
+        themes.append("Management")
+        
+    if "balance" in text_lower or "hours" in text_lower:
+        themes.append("Work-life balance")
+        
+    if not themes:
+        themes.append("Other")
+        
+    return ", ".join(themes)
 
 # Apply NLP transformations
 feedback["sentiment_score"] = feedback["FeedbackText"].apply(get_sentiment_score)
 feedback["sentiment_label"] = feedback["sentiment_score"].apply(get_sentiment_label)
-feedback["theme"] = feedback["FeedbackText"].apply(detect_theme)
+feedback["theme"] = feedback["FeedbackText"].apply(extract_themes)
 
 # Save results
 feedback.to_csv("outputs/feedback_with_sentiment.csv", index=False)
