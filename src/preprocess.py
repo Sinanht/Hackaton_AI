@@ -15,12 +15,21 @@ sensitive_df = df[sensitive_cols].copy()
 drop_cols = [col for col in ["Employee_Name", "DOB", "Zip"] if col in df.columns]
 df = df.drop(columns=drop_cols)
 
-# Remove sensitive attributes from training set
-df = df.drop(columns=sensitive_cols, errors="ignore")
+# We only want the model to learn from features the user can control in the dashboard
+dashboard_features = [
+    "EmpID",                     # Needed for merge
+    "Salary", 
+    "EngagementSurvey", 
+    "EmpSatisfaction", 
+    "Absences", 
+    "DaysLateLast30", 
+    "SpecialProjectsCount",
+    "Termd"                      # Target variable
+]
 
-# Remove leakage columns (they contain information that wouldn't be available at prediction time)
-leakage_cols = [col for col in ["TermReason", "DateofTermination"] if col in df.columns]
-df = df.drop(columns=leakage_cols, errors="ignore")
+# Keep only those columns if they exist
+keep_cols = [c for c in dashboard_features if c in df.columns]
+df = df[keep_cols]
 
 # Fill missing values
 for col in df.columns:
